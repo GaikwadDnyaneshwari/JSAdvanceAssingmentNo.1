@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   justify-content: center;
+   background-color: black;
+    background-size: cover;
+}
+
+
+
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#clock{
+    display: flex;
+    margin: 1rem 5rem;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    top: 10px;
+}
+
+
+button{
+    margin: 3rem;
+    padding: 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    top: 30px;
+    cursor: pointer;
+    transition: 1s ease;
+    box-shadow: 2px 2px 10px gray;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#date{
+    text-align: center;
+    font-size: 30px;
+    top: 20px;
+    color: white;
+    position: relative;
+
+}

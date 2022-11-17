@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div id="clock_container">
+            <h2>Digital Clock</h2>
+        
+            <div id="clock"></div>
+            <div id="date">
+                <script>
+                    var today = new Date();
+                    var day = String(today.getDate()).padStart(2,"0");
+                    var month = String(today.getMonth() + 1).padStart(2, "0");
+                    var year = today.getFullYear();
+
+                    today = day+ "/" + month + "/" + year;
+                    document.write(today);
+                </script>
+            </div>
+            <div>
+                <button onclick="startClock()">Start</button>
+                 <button onclick="stopClock()">Stop</button>
+            </div>
+                
+                
+        
+
+            
+            
+        </div>    
+
+
+        
+     <script src="clock.js"></script>
+    
+    
+</body>
+</html>
